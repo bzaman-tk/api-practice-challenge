@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Challenge</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>    
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <!-- api-7(a) git users -->
+    <div class="container mx-auto my-5">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-center text-2xl mb-5">GitHub User</h1>
+            <ul id="users" class="users space-x-3 text-black grid grid-cols-3">
+                <!-- dynamic data will be added here -->
+            </ul>
+        </div>
+    </div>
+    <!-- api-3 filter country -->
+    <section class="filter-country">
+    <div class="container mx-auto my-5">
+        <div class="flex flex-col md:flex-row space-x-10 justify-center">
+            <select id="region" class="select select-bordered max-w-xs focus:outline-none outline-none">
+                <option disabled selected>REGION</option>
+                <option>Africa</option>
+                <option>Americas</option>
+                <option>Asia</option>
+                <option>Europe</option>
+                <option>Oceania</option>
+            </select>  
+            <select id="capital" class="select select-bordered max-w-xs focus:outline-none outline-none">
+                <option disabled selected>Select A Region</option>
+                <!-- Option will be added here dynamicali  -->
+            </select>  
+            <select id="languages-option" class="select select-bordered  max-w-xs focus:outline-none outline-none">
+                <option disabled selected>Language</option> 
+            </select>            
+        </div>
+        <div id="country-container" class="flex flex-col flex-wrap space-x-3 justify-center md:flex-row"></div>
+    </div>
+    </section>
+    <!-- api-1 - person finder -->
+    <div class="container my-5 mx-auto ">
+        <h2 id="found-count" class="text-center text-2xl mb-5">Found 0 Person</h2>
+        <div id="person-container" class="flex flex-col space-x-20 justify-center md:flex-row">
+            <!-- Dynamic Data Will be placed here -->
+        </div>
+    </div>
+    <!-- api-2 -->
+    <section class="api_2">
+        <div class="container my-5 mx-auto">
+            <div id="cars-container" class="flex flex-col space-x-3 justify-center md:flex-row">
+                <!-- dynamic Data will be added here  -->
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
+<script src="js/data/api-1-data.js"></script>
+<script src="js/data/api-2-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
